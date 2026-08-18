@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apptech Academy | Build Your Future</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">
+            <!-- Realistic Tech Logo Icon -->
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div class="logo-text">Apptech <small>Academy</small><span>.</span></div>
+        </a>
+        
+        <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <nav class="nav-menu" id="navMenu">
+        <form class="nav-search" role="search" id="navSearch"><i data-lucide="search"></i><input id="siteSearch" type="search" placeholder="Search courses and pages" aria-label="Search courses and pages"><button type="submit" aria-label="Submit search"><i data-lucide="arrow-up-right"></i></button></form>
+        <ul>
+            <li><a href="index.html"><i data-lucide="house"></i> Home</a></li>
+            <li class="nav-group"><button class="nav-group-toggle" aria-expanded="false"><span><i data-lucide="book-open"></i> Courses</span><i data-lucide="chevron-down"></i></button><ul class="nav-submenu"><li><a href="course.html?course=graphic-design">Graphic Design</a></li><li><a href="course.html?course=web-design">Web Design</a></li><li><a href="course.html?course=web-development">Web Development</a></li><li><a href="course.html?course=programming">Programming</a></li><li><a href="course.html?course=networking">Computer Networking</a></li><li><a href="course.html?course=cloud-networking">Cloud Networking</a></li><li><a href="course.html?course=cybersecurity">Cybersecurity</a></li><li><a href="course.html?course=data-analysis">Data Analysis</a></li></ul></li>
+            <li><a href="about.html"><i data-lucide="info"></i> About us</a></li>
+            <li class="nav-group"><button class="nav-group-toggle" aria-expanded="false"><span><i data-lucide="graduation-cap"></i> Studies</span><i data-lucide="chevron-down"></i></button><ul class="nav-submenu"><li><a href="studies.html#methodology">Training methodology</a></li><li><a href="studies.html#abroad">Study abroad</a></li><li><a href="studies.html#degrees">University degrees</a></li></ul></li>
+            <li><a href="contact.html"><i data-lucide="phone-call"></i> Contact us</a></li>
+        </ul>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">Since 1986 · Learn without limits</p>
+            <h1>Shape your future<br>with <span>Apptech Academy.</span></h1>
+            <p>Practical technology education, expert mentors and globally relevant skills for the career you want.</p>
+            <div class="hero-actions"><a href="#courses" class="btn">Explore courses <span>↘</span></a><a href="#contact" class="text-link">Talk to an advisor</a></div>
+        </div>
+        <div class="hero-note"><strong id="heroNumber">01</strong><span id="heroNote">Career-ready<br>learning starts here</span></div>
+    </section>
+
+    <main>
+        <section class="why-section section-shell" id="why-us">
+            <div class="section-heading"><p class="eyebrow">The Apptech Academy advantage</p><h2>Why choose us<span>?</span></h2><p>Everything you need to move from curious beginner to confident professional.</p></div>
+            <div class="benefit-grid">
+                <article class="benefit-card open"><button class="benefit-trigger" aria-expanded="true"><span class="benefit-number">01</span><i class="benefit-icon" data-lucide="globe-2"></i><span class="benefit-title">Global presence</span><span class="plus">−</span></button><div class="benefit-detail"><strong>60 countries</strong><p>Learn with a trusted education network that connects ambitious students to opportunities around the world.</p></div></article>
+                <article class="benefit-card"><button class="benefit-trigger" aria-expanded="false"><span class="benefit-number">02</span><i class="benefit-icon" data-lucide="target"></i><span class="benefit-title">Career-focused training</span><span class="plus">+</span></button><div class="benefit-detail"><strong>Skills that travel</strong><p>Our programs follow real workplace needs, helping you build a portfolio that speaks to employers.</p></div></article>
+                <article class="benefit-card"><button class="benefit-trigger" aria-expanded="false"><span class="benefit-number">03</span><i class="benefit-icon" data-lucide="graduation-cap"></i><span class="benefit-title">Qualified instructors</span><span class="plus">+</span></button><div class="benefit-detail"><strong>Guidance that matters</strong><p>Get coached by patient, experienced instructors who turn complex ideas into practical confidence.</p></div></article>
+            </div>
+        </section>
+
+        <section class="courses-section section-shell" id="courses"><div class="section-heading split-heading"><div><p class="eyebrow">Find your direction</p><h2>Courses built for<br><span>what’s next.</span></h2></div><p>Choose a path, learn by doing and leave with skills you can use from day one.</p></div>
+            <div class="course-grid">
+                <article class="course-card featured"><img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=85" alt="Computer code on a monitor"><div><span class="course-tag">Most popular</span><h3>Web development</h3><p>Build full-stack digital products with modern tools.</p><a href="course.html?course=web-development" aria-label="Explore web development">↗</a></div></article>
+                <article class="course-card"><img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?auto=format&fit=crop&w=700&q=85" alt="Graphic design composition"><div><span class="course-tag">Creative</span><h3>Graphic design</h3><p>Give ideas a visual voice.</p><a href="course.html?course=graphic-design" aria-label="Explore graphic design">↗</a></div></article>
+                <article class="course-card"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?auto=format&fit=crop&w=700&q=85" alt="Web design workspace"><div><span class="course-tag">Digital craft</span><h3>Web design</h3><p>Create thoughtful digital experiences.</p><a href="course.html?course=web-design" aria-label="Explore web design">↗</a></div></article>
+                <article class="course-card"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=700&q=85" alt="Network server room"><div><span class="course-tag">Certification</span><h3>Computer networking</h3><p>Master the systems that keep business moving.</p><a href="course.html?course=networking" aria-label="Explore computer networking">↗</a></div></article>
+                <article class="course-card"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=700&q=85" alt="Cloud computing network illustration"><div><span class="course-tag">Future skills</span><h3>Cloud networking</h3><p>Design secure, scalable cloud infrastructure.</p><a href="course.html?course=cloud-networking" aria-label="Explore cloud networking">↗</a></div></article>
+                <article class="course-card"><img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=700&q=85" alt="Cybersecurity padlock"><div><span class="course-tag">Security</span><h3>Cybersecurity</h3><p>Protect people, platforms and digital trust.</p><a href="course.html?course=cybersecurity" aria-label="Explore cybersecurity">↗</a></div></article>
+                <article class="course-card"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=85" alt="Data analysis dashboard"><div><span class="course-tag">Insight</span><h3>Data analysis</h3><p>Turn information into better decisions.</p><a href="course.html?course=data-analysis" aria-label="Explore data analysis">↗</a></div></article>
+            </div>
+        </section>
+
+        <section class="about-section section-shell" id="about"><div class="about-image"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1100&q=85" alt="Students collaborating around a laptop"><span>Learn together.<br>Go further.</span></div><div class="about-copy"><p class="eyebrow">A smarter start</p><h2>Why <span>Aptech?</span></h2><p>Technology changes quickly. Your learning should keep pace. Aptech combines trusted curriculum, hands-on labs and human mentorship to help you take your next step with clarity.</p><ul><li>Industry-aligned curriculum</li><li>Flexible learning support</li><li>Recognised certifications</li></ul><a href="#contact" class="btn">Start a conversation <span>↘</span></a></div><div class="certification-strip"><p class="eyebrow">Certification pathways</p><h3>Learn with credentials recognised by leading technology brands.</h3><div class="certification-list"><div><b>G</b><span>Google<br><small>Professional pathway</small></span></div><div><b>▦</b><span>Microsoft<br><small>Career credentials</small></span></div><div><b>●</b><span>Apple<br><small>Technology skills</small></span></div></div></div></section>
+
+        <section class="alumni-section section-shell"><div class="alumni-copy"><p class="eyebrow">Beyond the classroom</p><blockquote>“Aptech gave me the confidence to turn a skill I was learning into a career I could see.”</blockquote><p class="alumni-name">Maya Okafor <span>· Software developer</span></p></div><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=800&q=85" alt="Aptech alumna smiling"></section>
+
+        <section class="contact-section section-shell" id="contact"><div class="contact-intro"><p class="eyebrow">Your next chapter</p><h2>Let’s make it<br><span>real.</span></h2><p>Have a question about a course or your career path? Our team is ready to help.</p><div class="contact-details"><p><strong>Email</strong> <a href="mailto:ireobachisom@gmail.com">aptechacademy@gmail.com</a></p><p><strong>WhatsApp</strong> <a href="https://wa.me/2348081837356">08081837356</a></p></div></div><form class="enquiry-form" id="enquiryForm"><label>Full name<input type="text" name="name" placeholder="Your full name" required></label><label>Email address<input type="email" name="email" placeholder="you@example.com" required></label><label>Phone number<input type="tel" name="phone" placeholder="+234 ..." required></label><label>Location<input type="text" name="location" placeholder="City, country" required></label><label class="full-field">Message<textarea name="message" rows="4" placeholder="Tell us what you would like to learn..." required></textarea></label><button class="btn" type="submit">Send enquiry <span>↗</span></button><p class="form-status" id="formStatus" role="status"></p></form></section>
+    </main>
+    <footer><div><a href="#home" class="logo"><div class="logo-text">Aptech<span>.</span></div></a><p class="footer-tagline">Skills for a world in motion.</p></div><div class="footer-links"><strong>Explore</strong><a href="#courses">Courses</a><a href="#about">About us</a><a href="studies.html">Studies</a></div><div class="footer-links"><strong>Connect</strong><a href="contact.html">Contact us</a><a href="https://wa.me/2348081837356">WhatsApp</a><a href="mailto:ireobachisom@gmail.com">aptechacademy@gmail.com</a></div><p class="footer-copy">© 2026 Aptech Education</p></footer>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
