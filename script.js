@@ -89,8 +89,12 @@ document.querySelectorAll('.benefit-trigger').forEach(trigger => trigger.addEven
 const enquiryForm = document.getElementById('enquiryForm');
 if (enquiryForm) enquiryForm.addEventListener('submit', event => {
     event.preventDefault();
-    document.getElementById('formStatus').textContent = 'Thank you for sending your enquiry. Our admissions team will get back to you shortly.';
-    event.target.reset();
+    const fields = enquiryForm.querySelectorAll('input, textarea');
+    const [name, email, phone, location, message] = Array.from(fields, field => field.value.trim());
+    const subject = encodeURIComponent(`Course enquiry from ${name}`);
+    const body = encodeURIComponent(`Full name: ${name}\nEmail: ${email}\nPhone: ${phone}\nLocation: ${location}\n\nMessage:\n${message}`);
+    window.location.href = `mailto:apptechacademy@gmail.com?subject=${subject}&body=${body}`;
+    document.getElementById('formStatus').textContent = 'Your email app is opening with your enquiry.';
 });
 
 document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
