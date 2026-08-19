@@ -153,6 +153,10 @@ if (hero) {
     window.setInterval(() => { slideIndex = (slideIndex + 1) % heroSlides.length; showSlide(); }, 5200);
 }
 
+document.querySelectorAll('.btn span, .course-card a[aria-label]').forEach(arrow => {
+    arrow.innerHTML = '<i data-lucide="arrow-up-right" aria-hidden="true"></i>';
+});
+
 if (window.lucide) lucide.createIcons();
 const certificationHeading = document.querySelector('.certification-strip h3');
 if (certificationHeading) certificationHeading.textContent = 'Certified pathways connected to Google, Microsoft and Apple.';
