@@ -94,7 +94,7 @@ if (enquiryForm) enquiryForm.addEventListener('submit', event => {
 });
 
 document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
-    link.href = 'mailto:ireobachisom@gmail.com';
+    link.href = 'mailto:apptechacademy@gmail.com';
     const emailLabel = link.querySelector('strong');
     if (emailLabel) emailLabel.textContent = 'aptechacademy@gmail.com';
     else link.textContent = 'aptechacademy@gmail.com';
